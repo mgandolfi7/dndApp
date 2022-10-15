@@ -7,9 +7,7 @@ function getFetch(){
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
-
-
-
+        
         document.querySelector("#name").innerText = data.name
         document.querySelector("#class").innerText = data.classes[0].name
 
